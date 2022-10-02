@@ -30,14 +30,17 @@ display: block;
     background-color: #151515;
 }
 header{
-    height: 90px;
+    /* height: 90px; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
     display: grid;
     align-items: center;
     background-color: white;
     transition: all .5s;
-    position: fixed;
+    position: absolute;
     top: 50px;
     width: 100%;
+    z-index: 2;
 }
 
 .header__container .navbar{
@@ -84,7 +87,7 @@ header{
 
 
 .navbar-light .navbar-nav .nav-item{
-    padding: 0 10px;
+    padding: 7px 10px;
 }
 
 .navbar-light .navbar-nav .nav-link::after {
@@ -203,6 +206,77 @@ color: white;
 }
 
 
+
+/* CAROUSEL */
+.carousel__container .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
+.carousel__container .carousel-indicators li.active{
+    width: 30px;
+    height: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #189A46;
+}
+
+
+
+/* ***************** */
+.carousel__container .carousel-item{
+    height: 1000px;
+}
+
+.carousel__container .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.carousel__container .carousel-item::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(21, 21, 21, 0.5);
+}
+
+.carousel__content{
+    position: absolute;
+    /* width: 100%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 500px; */
+    z-index: 2;
+    /* background-color: #151515; */
+}
+
+.carousel__container{
+    /* height: 700px; */
+    background-color: #189A46;
+}
+
+.carousel__contentInfo{
+    max-width: 700px;
+}
+
+.carousel__contentInfo h3{
+    color: rgb(145, 104, 104);
+}
+
+
 @media only screen and (max-width: 991px){
     .header__container #switchButton{
         position: absolute;
@@ -218,4 +292,20 @@ color: white;
     .header__container .dropdown-menu{
         text-align: center;
     }
+}
+
+@media (max-width:1200px){
+
+}
+@media (max-width:992px){
+    
+}
+@media (max-width:768px){
+    
+}
+@media (max-width:576px){
+    
+}
+@media (min-width:575px){
+    
 }
