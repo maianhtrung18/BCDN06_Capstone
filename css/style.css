@@ -8,7 +8,27 @@ body, html{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
 }
-
+/* Title */
+.title{
+    text-align: center !important;
+}
+.title_sub{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    color: #f53626;
+}
+.title_main{
+    font-size:40px;
+    font-weight:600;
+    line-height:48px;
+    text-transform: capitalize;
+}
+/* Body img */
+    body img{
+        border-radius: 10px;
+    }
 /* BUTTON DARK LIGHT */
 /* Light theme */
 #myBody{
@@ -275,6 +295,21 @@ color: white;
 .carousel__contentInfo h3{
     color: rgb(145, 104, 104);
 }
+
+
+/* Team */
+.team_content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -18px;
+    margin-right: -18px;
+}
+.team_item{
+    width: 25%;
+    padding:0 20px;
+}
+
+
 
 
 @media only screen and (max-width: 991px){
