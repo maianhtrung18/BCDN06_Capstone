@@ -37,7 +37,7 @@ header{
     align-items: center;
     background-color: white;
     transition: all .5s;
-    position: absolute;
+    position: fixed;
     top: 50px;
     width: 100%;
     z-index: 5;
@@ -148,7 +148,7 @@ color: white;
     background-color: #189A46;
     transition: all .5s;
 
-   }
+}
 
 
 .header__container a.dropdown-item:hover{
@@ -156,7 +156,7 @@ color: white;
     background-color: unset;
 }
 
-   .header__container a.dropdown-item:hover:after {
+.header__container a.dropdown-item:hover:after {
     content: "";
     position: absolute;
     bottom: 2px;
@@ -166,7 +166,7 @@ color: white;
     height: 1px;
     background-color: #189A46;
     transition: all .5s;
-   }
+}
 
 
 /* Dropdown Menu Darkmode */
@@ -297,7 +297,64 @@ color: white;
     color: #189A46;
 }
 
+/* ABOUT US */
+.dark .aboutUs{
+    background-color: #151515;
+}
+.aboutUs .aboutUs__container{
 
+    text-align: center;
+
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+    margin-bottom: 0px;
+}
+
+
+.description{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;   
+    color: #000c04;
+}
+.dark .description{
+    color: #ddd;
+}
+.content{
+    color: #696969;
+    font-size: 1.2em;
+    line-height: 28px;
+    font-family: 'Jost', sans-serif;
+}
+.dark .content{
+    color: #afafaf;
+}
+
+.aboutUs__container a{
+    color: #000c04;
+    border-bottom: #189A46 2px solid;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 30px;
+    transition: all .3s;
+}
+
+.dark .aboutUs__container a{
+    color: #ddd;
+}
+.aboutUs__container a:hover{
+    color: #189A46;
+}
 
 @media only screen and (max-width: 991px){
     .header__container #switchButton{
@@ -331,6 +388,12 @@ color: white;
     .carousel__contentInfo span{
         margin-bottom: 70px; 
     }
+
+    .aboutUs .aboutUs__container{
+        max-width: 720px;
+    }
+
+ 
 }
 @media (max-width:1199.98px){
     .carousel__container .carousel-item{
@@ -348,6 +411,15 @@ color: white;
     .carousel__contentInfo span{
         margin-bottom: 50px; 
     }
+
+    .aboutUs .aboutUs__container{
+        max-width: 720px;
+    }
+
+    .description{
+        font-size: 35px;
+    }
+  
 
 }
 @media (max-width:992px){
@@ -373,6 +445,9 @@ color: white;
         padding: 10px 30px;
     }
     
+    .aboutUs .aboutUs__container{
+        max-width: 720px;
+    }
    
     
 }
@@ -393,6 +468,10 @@ color: white;
         margin-bottom: 50px; 
     }
 
+    .aboutUs .aboutUs__container{
+        max-width: 540px;
+    }
+
     
 }
 @media (max-width:576px){
@@ -411,6 +490,10 @@ color: white;
     }
     .carousel__contentInfo span{
         margin-bottom: 50px; 
+    }
+
+    .description{
+        font-size: 30px;
     }
     
 }
@@ -446,6 +529,10 @@ color: white;
     }
     .carousel__contentInfo h3{
         font-size: 30px;
+    }
+
+    .description{
+        font-size: 25px;
     }
 
 }
