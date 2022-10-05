@@ -231,15 +231,10 @@ color: white;
 
 /* ***************** */
 
-
-
 .carousel__container .carousel-item img{
     height: 100%;
     object-fit: cover;
 }
-
-
-
 
 .carousel__container .carousel-item::before{
     content: "";
@@ -253,21 +248,15 @@ color: white;
 
 .carousel__content{
     position: absolute;
-    /* width: 100%; */
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* height: 500px; */
     z-index: 2;
-    /* background-color: #151515; */
 }
 
 .carousel__container{
-    /* height: 700px; */
     background-color: #189A46;
 }
-
-
 
 .carousel__contentInfo h3{
     color: rgb(255, 255, 255);
@@ -278,9 +267,7 @@ color: white;
     color: rgba(255, 255, 255, 0.8);
     display: block;
     margin-bottom: 70px;
-
 }
-
 
 .carousel__contentInfo a.white{
     border: white solid 2px;
@@ -289,9 +276,7 @@ color: white;
     border-radius: 10px;
     color: #189A46;
     background-color: white;
-    /* display: block; */
-   
-    
+    text-decoration: none;
 }
 
 .carousel__contentInfo a.transparent{
@@ -301,8 +286,17 @@ color: white;
     border-radius: 10px;
     color: white;
     margin-left: 10px;
-
+    transition: all .5s;
+    background-color: unset;
+    color: white;
+    text-decoration: none;
 }
+
+.carousel__contentInfo a.transparent:hover{
+    background-color: white;
+    color: #189A46;
+}
+
 
 
 @media only screen and (max-width: 991px){
@@ -338,7 +332,6 @@ color: white;
         margin-bottom: 70px; 
     }
 }
-
 @media (max-width:1199.98px){
     .carousel__container .carousel-item{
         height: 660px;
