@@ -30,7 +30,7 @@ display: block;
     background-color: #151515;
 }
 header{
-    /* height: 90px; */
+    min-height: 90px;
     /* padding-top: 10px;
     padding-bottom: 10px; */
     display: grid;
@@ -41,6 +41,7 @@ header{
     top: 50px;
     width: 100%;
     z-index: 5;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 .header__container .navbar{
@@ -338,7 +339,7 @@ color: white;
     color: #afafaf;
 }
 
-.aboutUs__container a{
+a.readMore{
     color: #000c04;
     border-bottom: #189A46 2px solid;
     text-decoration: none;
@@ -349,11 +350,128 @@ color: white;
     transition: all .3s;
 }
 
-.dark .aboutUs__container a{
+.dark a.readMore{
     color: #ddd;
 }
-.aboutUs__container a:hover{
+a.readMore:hover{
     color: #189A46;
+}
+
+/* LIST CARD */
+section.listcard{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.dark .listcard{
+    background-color: #222;
+}
+
+.listcard__containerCard{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border-radius: 5px; */
+}
+
+.listcard__containerCardContent{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.listcard__containerCardContent:hover{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.dark .listcard__containerCardContent{
+    background-color: #151515;
+}
+
+.dark .listcard__containerCardContent:hover{
+    background-color: #222;
+}
+
+.listcard__containerCardContent i{
+    color: #189A46;
+    font-size: 30px;
+}
+
+.listcard__containerCardContent h4{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+.listcard__containerCardContent h4 a{
+    text-decoration: none;
+    color: #000c04;
+    font-size: 24px;
+    font-weight: 600;
+    /* margin-top: 10px; */
+}
+
+.dark .listcard__containerCardContent h4 a{
+    color: #ddd;
+}
+
+.listcard__containerCardContent h4 a:hover{
+    color: #189A46;
+}
+
+.listcard__containerCardContent>a{
+    margin-top: 20px;
+}
+
+.listcard__containerCardContent span{
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+    display: block;
+}
+
+.dark .listcard__containerCardContent span{
+    color: #afafaf;
+}
+
+.listcard__container{
+    margin: auto;
+}
+
+
+/* OFFER */
+
+.offer__containerContent img{
+    width: 100%;
+    border-radius: 10px;
+}
+.offer__containerRight{
+    align-self: center;
+}
+
+.offer__containerRight .content{
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.offer__containerRight li{
+    list-style: none;
+    margin: 15px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dark .offer__containerRight li{
+    color: #ddd;
+}
+
+.offer__containerRight i{
+    padding: 5px;
+    background-color: rgba(147, 107, 232, 0.05);
+    border-radius: 50%;
+    color: #189A46;
+    margin-right: 10px;
+   
 }
 
 @media only screen and (max-width: 991px){
