@@ -27,6 +27,8 @@
   <!-- DARK THEME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Video Popup -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -258,7 +260,7 @@
         <div class="col-lg-3 col-6 team-wrap">
           <div class="team_info text-center">
             <div class="column position-relative">
-              <a href=""><img src="./img/team1.jpg" alt="" class="img-fluid team-img"></a>
+              <a href="#url"><img src="./img/team1.jpg" alt="" class="img-fluid team-img"></a>
             </div>
             <div class="column">
               <h3 class="name_pos"><a>Micheal Wagou</a> </h3>
@@ -352,7 +354,35 @@
       </div>
     </div>
   </section>
+  <section class="index" id="video">
+    <div class="new_block py-5">
+      <div class="container py-lg-5">
+        <div class="middle-section text-center">
+          <div class="index_top">
+            <h6 class="title text-center">BETTER PET NUTRITION.</h6>
+            <h3 class="description">The Finest Fresh Food And All Your Pet Needs.</h3>
+            <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit
+              consec tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+              explicabo officia.</p>
+          </div>
+          <div class="index_video mt-5">
+            <div class="position-relative">
+              <img src="./img/banner2.jpg" alt="" class="img-fluid video-popup-image">
+              <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
+                <span class="video-play-icon">
+                  <span class="fa fa-play"></span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <iframe src="https://player.vimeo.com/video/101587706"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
 
+    </div>
+  </section>
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
     integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
@@ -370,6 +400,43 @@
   <script>
     $('.counter').countUp();
   </script>
+  <!-- Video Popup -->
+    <script src="./js/jquery.magnific-popup.js"></script>
+    <script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
   <!-- BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
@@ -382,7 +449,6 @@
       //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
       document.getElementById("myBody").classList.toggle("dark");
     };
-
   </script>
   <!-- MIN HEIGHT HEADER -->
   <script>
