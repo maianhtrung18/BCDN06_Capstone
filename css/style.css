@@ -51,14 +51,16 @@ display: block;
     opacity: 1;
     visibility: visible;
   }
-
+img{
+    vertical-align: middle;
+    border-style: none;
+}
 /* HEADER */
 .dark header{
 
     background-color: #151515;
 }
 header{
-    min-height: 90px;
     display: grid;
     align-items: center;
     background-color: white;
@@ -491,7 +493,63 @@ section.listcard{
     margin-right: 10px;
    
 }
-
+/* Team */
+.team_row .team-wrap{
+    margin-bottom: 44px;
+}
+.team_info .column{
+    overflow: hidden;
+}
+.team .name_pos{
+    margin-top: 16px;
+}
+.team h3.name_pos a{
+    font-size: 22px;
+    line-height: 26px;
+    color: #000c04;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.team_info .column p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #696969;
+}
+.team .social a{
+    display: inline-block;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(147, 107, 232, 0.05);
+    color: #189A46;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.team .social a span{
+    font-size: 12px;
+    line-height: 30px;
+    display: block;
+}
+.team .social a:hover{
+    background: #189A46;
+    color: #fff;
+}
+.team .column a img{
+    display: block;
+    transform:scale(1);
+    transition: transform 0.3s linear;
+    border-radius: 10px;
+}
+.team_info:hover .column a img{
+    transform: scale(1.2);
+}
+.team_info:hover .column h3.name_pos a{
+    color:#189A46;
+}
+/* Team */
 @media only screen and (max-width: 991px){
     .header__container #switchButton{
         position: absolute;
