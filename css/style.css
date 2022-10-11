@@ -55,7 +55,11 @@ html {
     opacity: 1;
     visibility: visible;
 }
-
+/* Thuộc tính chung */
+body a, button, .btn{
+    cursor: pointer !important;
+    font-family: 'Jost', sans-serif;
+}
 img {
     vertical-align: middle;
     border-style: none;
@@ -663,6 +667,147 @@ div#small-dialog iframe {
     height: 400px;
     display: block;
 }
+/* /Index */
+/* Plan */
+/* Dark Theme */
+.dark .plan{
+    background-color: #222222;
+}
+.dark .plan_item{
+    background-color: #151515;
+}
+.dark .plan_item h6{
+    color:white;
+}
+.dark .plan_item h4 span{
+    color:#666;
+}
+/* /Dark Theme */
+.plan_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0 5% auto;
+    margin-top: 0;
+    width: 90%;
+}
+.plan_item{
+    background: white;
+    border-radius: 6px;
+    align-self: center;
+}
+.plan_box{
+    padding: 3.5em 2.5em;
+    border-right: 0;
+}
+.plan_top{
+    text-align: center;
+}
+.plan_top h6{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.plan_top h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189A46;
+}
+.plan_top h4 label{
+    font-size: 25px;
+    vertical-align:text-top;
+}
+.plan_top h4 span{
+    font-size: 16px;
+    line-height: 25px;
+    color:#9999;
+    font-weight: 400;
+}
+.plan_bottom{
+    text-align: center;
+    padding-top: 1rem;
+}
+.plan_bottom ul{
+    min-height: 120px;
+}
+.plan_bottom ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    color:#304659;
+}
+.plan_bottom ul li p.list{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+}
+.plan_buy_button{
+    margin-top: 2em;
+}
+.btn_style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
+.btn_primary {
+    color: #fff;
+    background-color: #189A46;
+    border-color: #189A46;
+}
+.btn_primary:hover {
+    color: #fff;
+    background-color: #116E32;
+    border-color: #116E32;
+}
+.plan_item.active{
+    -webkit-transform: scale(1.03);
+    z-index:1;
+    margin:0;
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+    border-radius: 6px;
+}
+.plan_item.active .plan_box{
+    padding:0;
+}
+.plan_item.active .plan_top{
+    padding: 48px 40px 8px;
+    background: #189A46;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.plan_item.active .plan_top h5{
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+.plan_item.active .plan_top h6, .plan_item.active .plan_top h4, .plan_item.active .plan_top h4 span{
+    color:#fff
+}
+.plan_item.active .plan_top h5{
+    color:#189A46;
+}
+.plan_item.active .plan_bottom{
+    padding:2rem 2.5rem 3.5rem;
+}
+/* /Plan */
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%);
