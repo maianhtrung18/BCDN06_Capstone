@@ -81,6 +81,7 @@ p {
 }
 
 header {
+    min-height:90px;
     display: grid;
     align-items: center;
     background-color: white;
@@ -684,8 +685,8 @@ div#small-dialog iframe {
 }
 /* /Dark Theme */
 .plan_content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
     margin:0 5% auto;
     margin-top: 0;
     width: 90%;
@@ -808,6 +809,27 @@ div#small-dialog iframe {
     padding:2rem 2.5rem 3.5rem;
 }
 /* /Plan */
+/* Update */
+.update_form{
+    justify-content: space-between;
+}
+.update_form input[type="email"]{
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.update_box{
+    max-width: 650px;
+}
+.update_form button{
+    flex-basis: 27%git;
+}
+/* Update */
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%);
