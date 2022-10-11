@@ -827,7 +827,7 @@ div#small-dialog iframe {
     max-width: 650px;
 }
 .update_form button{
-    flex-basis: 27%git;
+    flex-basis: 27%;
 }
 /* Update */
 @keyframes ripple {
