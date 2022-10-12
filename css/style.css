@@ -73,7 +73,9 @@ p {
     color: #696969;
     font-family: 'Jost', sans-serif;
 }
-
+li{
+    list-style: none;
+}
 /* HEADER */
 .dark header {
 
@@ -532,7 +534,7 @@ section.listcard {
 }
 
 /* Team */
-.dark .team h3.name_pos a {
+/* .dark .team h3.name_pos a {
     color: #fff;
 }
 
@@ -600,7 +602,7 @@ section.listcard {
 
 .team_info:hover .column h3.name_pos a {
     color: #189A46;
-}
+} */
 
 /* Team */
 /* Stats */
@@ -808,35 +810,6 @@ div#small-dialog iframe {
     padding:2rem 2.5rem 3.5rem;
 }
 /* /Plan */
-/* Update */
-.update_form{
-    justify-content: space-between;
-}
-.update_form input[type="email"]{
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 0px 20px;
-    height: 60px;
-    flex-basis: 70%;
-    background: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.update_box{
-    max-width: 650px;
-}
-.update_form button{
-    flex-basis: 27%;
-}
-@media only screen and (max-width: 667px){
-    .update_form button.btn.btn_style.btn_primary{
-        flex-basis: 100%;
-        display: block;
-        width: 100%;
-        margin-top: 16px;
-    }
-}
-/* Update */
 /* Testimonials */
 .testtimonial_feedback{
     max-width: 1050px;
@@ -949,8 +922,37 @@ div#small-dialog iframe {
     outline: none;
 }
 /* Testimonial */
+/* Update */
+.update_form{
+    justify-content: space-between;
+}
+.update_form input[type="email"]{
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.update_box{
+    max-width: 650px;
+}
+.update_form button{
+    flex-basis: 27%;
+}
+@media only screen and (max-width: 667px){
+    .update_form button.btn.btn_style.btn_primary{
+        flex-basis: 100%;
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+    }
+}
+/* Update */
 /* Contact */
-.contact_content{
+/* .contact_content{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:40px;
@@ -1005,8 +1007,74 @@ div#small-dialog iframe {
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
-
+.contact_form .form-control{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #252b33;
+    padding: 0px 16px;
+    border: 1px solid var(--bg-light);
+    background: var(--bg-light);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    height: 55px;
+} */
 /* Contact */
+/* Footer */
+.footer_bg{
+    background-color: #111;
+}
+.footer_title{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.footer_list ul li{
+    margin-bottom: 5px;
+}
+.footer_list ul li p, .footer_list ul li a{
+    color:#696969;
+    font-size: 1rem;
+    line-height: 28px;
+}
+.footer_list ul li a{
+    color:#696969;
+}
+.footer_list ul li a:hover{
+    color:#fff;
+}
+.social_icons{
+    margin-top: 3px;
+    padding: 0;
+    overflow: hidden;
+}
+.social_icons li{
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.social_icons li a span.fab{
+    transition: color .5s;
+}
+.footer_bottom{
+    border: 1px solid rgba(103, 99, 99, 0.14);
+}
+.copyright{
+    font-size: 16px;
+    line-height: 28px;
+    color:#696969;
+    margin-bottom: 0;
+}
+.copyright>a{
+    color:#f53626;
+    opacity: 0.9;
+}
+/* Footer */
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%);
