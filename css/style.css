@@ -830,6 +830,118 @@ div#small-dialog iframe {
     flex-basis: 27%;
 }
 /* Update */
+/* Testimonials */
+.testtimonial_feedback{
+    max-width: 1050px;
+    margin:auto;
+}
+.testimonials{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.testimonial{
+    display: block;
+    margin:0;
+    padding:40px 30px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    overflow: hidden;
+    text-align: left;
+}
+.testimonial blockquote{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+.testimonial blockquote q{
+    font-size: 1.2rem;
+    line-height:28px;
+    color:#696969;
+}
+.testimonial blockquote q::before{
+    font-size: 50px;
+    color: #189A46;
+    line-height: .8;
+    padding-top: 8px;
+    font-weight: 600;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+}
+.cus_info{
+    display:flex;
+    text-align: center;
+}
+.cus_img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.cus_description{
+    margin:0;
+    margin-left: 20px;
+    text-align: left;
+}
+.cus_description h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin:0;
+}
+.cus_description p.identity{
+    color: #777;
+    font-size: 17px;
+    font-style: normal;
+    margin-bottom: 0;
+    text-align: left;
+    opacity: 0.8;
+}
+.owl-two.owl-carousel.owl-theme .owl-dots {
+    position: inherit;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    margin-top: 80px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    background: transparent;
+    border:none;
+    padding: 1px 6px !important;
+}
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 2px;
+    background: #d8d8d8;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 25px;
+    position: relative;
+}
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot.active span{
+    width: 30px;
+    height: 10px;
+    background: #189A46;
+}
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:hover span{
+    width: 30px;
+    height: 10px;
+    background: #189A46;
+}
+.owl-dots button.owl-dot{
+    
+}
+/* Testimonial */
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%);
@@ -839,7 +951,6 @@ div#small-dialog iframe {
         box-shadow: 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
-
 /* Index */
 @media only screen and (max-width: 991px) {
     .header__container #switchButton {
@@ -1054,4 +1165,12 @@ div#small-dialog iframe {
         font-size: 25px;
     }
 
+}
+@media only screen and (max-width: 667px){
+    .update_form button.btn.btn_style.btn_primary{
+        flex-basis: 100%;
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+    }
 }
