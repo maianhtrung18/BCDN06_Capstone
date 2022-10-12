@@ -828,6 +828,14 @@ div#small-dialog iframe {
 .update_form button{
     flex-basis: 27%;
 }
+@media only screen and (max-width: 667px){
+    .update_form button.btn.btn_style.btn_primary{
+        flex-basis: 100%;
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+    }
+}
 /* Update */
 /* Testimonials */
 .testtimonial_feedback{
@@ -1222,12 +1230,4 @@ div#small-dialog iframe {
         font-size: 25px;
     }
 
-}
-@media only screen and (max-width: 667px){
-    .update_form button.btn.btn_style.btn_primary{
-        flex-basis: 100%;
-        display: block;
-        width: 100%;
-        margin-top: 16px;
-    }
 }
