@@ -938,6 +938,9 @@ div#small-dialog iframe {
     height: 10px;
     background: #189A46;
 }
+.owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:focus{
+    outline: none;
+}
 /* Testimonial */
 @keyframes ripple {
     0% {
