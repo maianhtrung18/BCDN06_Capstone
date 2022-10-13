@@ -1089,7 +1089,7 @@ div#small-dialog iframe {
     color:#f53626;
     opacity: 0.9;
 }
-.dark .footer_list ul li p,
+.dark .footer_list ul li p, .dark
 .footer_list ul li p>a{
     color:#AFAFAF;
 }
@@ -1185,14 +1185,17 @@ div#small-dialog iframe {
     .aboutUs .aboutUs__container {
         max-width: 720px;
     }
-
-    .description {
-        font-size: 35px;
-    }
-
-
 }
-
+@media (max-width:1080px) {
+    .description{
+        font-size: 35px!important;
+        line-height: 40px;
+    }
+    h3{
+        margin: 0;
+        padding: 0;
+    }
+}
 @media (max-width:992px) {
     .carousel__contentInfo {
         max-width: 100%;
