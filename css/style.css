@@ -670,6 +670,12 @@ div#small-dialog iframe {
     height: 400px;
     display: block;
 }
+.dark .index_top p{
+    color:#AFAFAF;
+}
+.dark .index{
+    background-color:#151515;
+}
 /* /Index */
 /* Plan */
 /* Dark Theme */
@@ -921,6 +927,15 @@ div#small-dialog iframe {
 .owl-two.owl-carousel.owl-theme .owl-dots .owl-dot:focus{
     outline: none;
 }
+.dark .testimonial{
+    background-color: #111;
+}
+.dark blockquote q{
+    color:#AFAFAF;
+}
+.cus_info .cus_description h3{
+    color:#fff;
+}
 /* Testimonial */
 /* Update */
 .update_form{
@@ -1073,6 +1088,19 @@ div#small-dialog iframe {
 .copyright>a{
     color:#f53626;
     opacity: 0.9;
+}
+.dark .footer_list ul li p,
+.footer_list ul li p>a{
+    color:#AFAFAF;
+}
+.dark .main_footer_social .social_icons li a>span.fab{
+    color:#AFAFAF;
+}
+.dark .footer_list ul li a{
+    color:#AFAFAF;
+}
+.dark .copyright{
+    color:#AFAFAF;
 }
 /* Footer */
 @keyframes ripple {
