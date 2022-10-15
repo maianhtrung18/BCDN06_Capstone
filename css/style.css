@@ -499,6 +499,10 @@ section.listcard {
 
 /* OFFER */
 
+.dark .offer{
+    background-color: #151515;
+}
+
 .offer__containerContent img {
     width: 100%;
     border-radius: 10px;
